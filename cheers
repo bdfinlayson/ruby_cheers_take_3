@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require_relative 'lib/cheer_generator'
+require_relative 'lib/birthday_parser'
+require_relative 'lib/name_parser'

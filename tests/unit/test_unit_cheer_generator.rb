@@ -2,36 +2,12 @@ require_relative '../test_helper'
 require_relative '../../lib/cheer'
 
 class TestCheer < Minitest::Test
-  def test_unit_0a_cheer_happy_path_name
+  def test_unit_0a_cheer_valid_name
     actual = Cheer.for_person("Ed")
     expected = "Give me an.. E!\n" +
                "Give me a... D!\n" +
                "Ed's just GRAND!"
     assert_equal expected, actual
-  end
-
-  def test_unit_0b_cheer_name_thats_blank
-    assert_raises(ArgumentError) do
-      Cheer.for_person("")
-    end
-  end
-
-  def test_unit_0c_cheer_name_thats_all_whitespace
-    assert_raises(ArgumentError) do
-      Cheer.for_person("  ")
-    end
-  end
-
-  def test_unit_0d_cheer_name_that_has_no_word_characters
-    assert_raises(ArgumentError) do
-      Cheer.for_person("*!?")
-    end
-  end
-
-  def test_unit_0e_cheer_birthday_instead_of_name
-    assert_raises(ArgumentError) do
-      Cheer.for_person("08/25")
-    end
   end
 
   def test_unit_1a_cheer_name_with_spaces

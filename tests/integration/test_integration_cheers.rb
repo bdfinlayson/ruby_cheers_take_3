@@ -1,7 +1,7 @@
 require_relative '../test_helper'
 
 class TestCheers < Minitest::Test
-  def test_happy_path
+  def test_integration_0a_happy_path
     shell_output = ''
     expected = ''
     IO.popen('./cheers', 'r+') do |pipe|
@@ -19,7 +19,7 @@ class TestCheers < Minitest::Test
     assert_equal expected, shell_output
   end
 
-  def test_happy_path2
+  def test_integration_0b_happy_path2
     shell_output = ''
     expected = ''
     IO.popen('./cheers', 'r+') do |pipe|
@@ -37,7 +37,7 @@ class TestCheers < Minitest::Test
     assert_equal expected, shell_output
   end
 
-  def test_no_input
+  def test_integration_0c_no_input
     shell_output = ''
     expected = ''
     IO.popen('./cheers', 'r+') do |pipe|
@@ -59,7 +59,7 @@ class TestCheers < Minitest::Test
     assert_equal expected, shell_output
   end
 
-  def test_bad_birthday_format
+  def test_integration_0d_bad_birthday_format
     shell_output = ''
     expected = ''
     IO.popen('./cheers', 'r+') do |pipe|

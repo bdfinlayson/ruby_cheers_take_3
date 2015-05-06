@@ -1,5 +1,5 @@
 require_relative '../test_helper'
-require_relative '../../lib/cheer'
+require_relative '../../lib/cheerGenerator'
 
 class TestCheer < Minitest::Test
   def test_unit_0a_cheer_valid_name

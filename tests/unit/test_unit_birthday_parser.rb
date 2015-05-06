@@ -1,4 +1,6 @@
 require_relative '../test_helper'
+require_relative '../../lib/cheerGenerator'
+
 
 class TestBirthdayParser < Minitest::Test
   def test_unit_0a_birthday_parser_feb_29
